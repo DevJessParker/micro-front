@@ -1,8 +1,9 @@
 'use strict';
 
-import { mount } from 'products/ProductsIndex';
-import 'cart/CartShow';
+import { mount as productsMount } from 'products/ProductsIndex';
+import { mount as cartMount } from 'cart/CartShow';
 
 console.log('Container');
 
-mount(document.querySelector('#product-list'));
+productsMount(document.querySelector('#product-list'));
+cartMount(document.querySelector('#my-cart'))
